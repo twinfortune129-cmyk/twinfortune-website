@@ -289,12 +289,8 @@ tailwind.config = {
       </li>
     
       <li class="group flex flex-col border border-clay-200 bg-white">
-        <div class="flex aspect-[3/2] items-center justify-center border-b border-clay-200 bg-moss-50 p-8" aria-hidden="true">
-          <svg viewBox="0 0 120 120" class="h-24 w-24 fill-none stroke-moss-600" stroke-width="3">
-            <path d="M60 12 96 26v27c0 25-15 43-36 55C39 96 24 78 24 53V26L60 12Z"/>
-            <rect x="42" y="47" width="36" height="27" rx="3"/>
-            <circle cx="60" cy="60.5" r="7"/><path d="M78 52l15-8v33l-15-8"/>
-          </svg>
+        <div class="aspect-[3/2] overflow-hidden border-b border-clay-200 bg-clay-100">
+          <img src="assets/img/home-security-equipment.webp" alt="Home security equipment including CCTV cameras and access-control devices" class="h-full w-full object-cover transition duration-500 group-hover:scale-[1.02]" loading="lazy">
         </div>
         <div class="flex flex-1 flex-col p-6">
           <span class="num font-mono text-[11px] tracking-wider text-brass-500">14</span>
@@ -304,11 +300,8 @@ tailwind.config = {
       </li>
 
       <li class="group flex flex-col border border-clay-200 bg-white">
-        <div class="flex aspect-[3/2] items-center justify-center border-b border-clay-200 bg-moss-50 p-8" aria-hidden="true">
-          <svg viewBox="0 0 120 120" class="h-24 w-24 fill-none stroke-moss-600" stroke-width="3">
-            <rect x="27" y="17" width="42" height="86" rx="4"/><path d="M27 51h42M60 30v10M60 63v14"/>
-            <rect x="78" y="54" width="20" height="38" rx="3"/><path d="M82 61h12M82 84h12"/>
-          </svg>
+        <div class="aspect-[3/2] overflow-hidden border-b border-clay-200 bg-clay-100">
+          <img src="assets/img/home-appliances.webp" alt="Home appliances including refrigerator, washing machine, television and related equipment" class="h-full w-full object-cover transition duration-500 group-hover:scale-[1.02]" loading="lazy">
         </div>
         <div class="flex flex-1 flex-col p-6">
           <span class="num font-mono text-[11px] tracking-wider text-brass-500">15</span>
@@ -378,18 +371,76 @@ tailwind.config = {
           Depending on the technical specification and sourcing requirement, we can source equipment and components from established engineering manufacturers, including the examples below.
         </p>
         <div class="mt-8 grid grid-cols-2 border-l border-t border-clay-200 sm:grid-cols-3 lg:grid-cols-4">
-          <span class="border-b border-r border-clay-200 px-4 py-4 text-[14px] font-semibold text-graph-700">Siemens</span>
-          <span class="border-b border-r border-clay-200 px-4 py-4 text-[14px] font-semibold text-graph-700">ABB</span>
-          <span class="border-b border-r border-clay-200 px-4 py-4 text-[14px] font-semibold text-graph-700">Schneider Electric</span>
-          <span class="border-b border-r border-clay-200 px-4 py-4 text-[14px] font-semibold text-graph-700">Rockwell Automation</span>
-          <span class="border-b border-r border-clay-200 px-4 py-4 text-[14px] font-semibold text-graph-700">Omron</span>
-          <span class="border-b border-r border-clay-200 px-4 py-4 text-[14px] font-semibold text-graph-700">Delta</span>
-          <span class="border-b border-r border-clay-200 px-4 py-4 text-[14px] font-semibold text-graph-700">Festo</span>
-          <span class="border-b border-r border-clay-200 px-4 py-4 text-[14px] font-semibold text-graph-700">SMC</span>
-          <span class="border-b border-r border-clay-200 px-4 py-4 text-[14px] font-semibold text-graph-700">Mitsubishi Electric</span>
-          <span class="border-b border-r border-clay-200 px-4 py-4 text-[14px] font-semibold text-graph-700">Phoenix Contact</span>
-          <span class="border-b border-r border-clay-200 px-4 py-4 text-[14px] font-semibold text-graph-700">SICK</span>
-          <span class="border-b border-r border-clay-200 px-4 py-4 text-[14px] font-semibold text-graph-700">ifm</span>
+          <div class="flex min-h-[92px] items-center justify-center border-b border-r border-clay-200 bg-white px-5 py-5 text-center">
+            <span class="text-[17px] font-semibold tracking-[-.01em] text-moss-700">Siemens</span>
+          </div>
+          <div class="flex min-h-[92px] items-center justify-center border-b border-r border-clay-200 bg-white px-5 py-5 text-center">
+            <span class="text-[17px] font-semibold tracking-[-.01em] text-moss-700">ABB</span>
+          </div>
+          <div class="flex min-h-[92px] items-center justify-center border-b border-r border-clay-200 bg-white px-5 py-5 text-center">
+            <span class="text-[17px] font-semibold tracking-[-.01em] text-moss-700">Schneider Electric</span>
+          </div>
+          <div class="flex min-h-[92px] items-center justify-center border-b border-r border-clay-200 bg-white px-5 py-5 text-center">
+            <span class="text-[17px] font-semibold tracking-[-.01em] text-moss-700">Rockwell Automation</span>
+          </div>
+          <div class="flex min-h-[92px] items-center justify-center border-b border-r border-clay-200 bg-white px-5 py-5 text-center">
+            <span class="text-[17px] font-semibold tracking-[-.01em] text-moss-700">Omron</span>
+          </div>
+          <div class="flex min-h-[92px] items-center justify-center border-b border-r border-clay-200 bg-white px-5 py-5 text-center">
+            <span class="text-[17px] font-semibold tracking-[-.01em] text-moss-700">Delta</span>
+          </div>
+          <div class="flex min-h-[92px] items-center justify-center border-b border-r border-clay-200 bg-white px-5 py-5 text-center">
+            <span class="text-[17px] font-semibold tracking-[-.01em] text-moss-700">Festo</span>
+          </div>
+          <div class="flex min-h-[92px] items-center justify-center border-b border-r border-clay-200 bg-white px-5 py-5 text-center">
+            <span class="text-[17px] font-semibold tracking-[-.01em] text-moss-700">SMC</span>
+          </div>
+          <div class="flex min-h-[92px] items-center justify-center border-b border-r border-clay-200 bg-white px-5 py-5 text-center">
+            <span class="text-[17px] font-semibold tracking-[-.01em] text-moss-700">Mitsubishi Electric</span>
+          </div>
+          <div class="flex min-h-[92px] items-center justify-center border-b border-r border-clay-200 bg-white px-5 py-5 text-center">
+            <span class="text-[17px] font-semibold tracking-[-.01em] text-moss-700">Phoenix Contact</span>
+          </div>
+          <div class="flex min-h-[92px] items-center justify-center border-b border-r border-clay-200 bg-white px-5 py-5 text-center">
+            <span class="text-[17px] font-semibold tracking-[-.01em] text-moss-700">SICK</span>
+          </div>
+          <div class="flex min-h-[92px] items-center justify-center border-b border-r border-clay-200 bg-white px-5 py-5 text-center">
+            <span class="text-[17px] font-semibold tracking-[-.01em] text-moss-700">ifm</span>
+          </div>
+        </div>
+          <div class="flex min-h-[86px] items-center justify-center border-b border-r border-clay-200 bg-white px-5 py-5 text-center">
+            <span class="text-[16px] font-semibold tracking-[-.01em] text-graph-700">ABB</span>
+          </div>
+          <div class="flex min-h-[86px] items-center justify-center border-b border-r border-clay-200 bg-white px-5 py-5 text-center">
+            <span class="text-[16px] font-semibold tracking-[-.01em] text-graph-700">Schneider Electric</span>
+          </div>
+          <div class="flex min-h-[86px] items-center justify-center border-b border-r border-clay-200 bg-white px-5 py-5 text-center">
+            <span class="text-[16px] font-semibold tracking-[-.01em] text-graph-700">Rockwell Automation</span>
+          </div>
+          <div class="flex min-h-[86px] items-center justify-center border-b border-r border-clay-200 bg-white px-5 py-5 text-center">
+            <span class="text-[16px] font-semibold tracking-[-.01em] text-graph-700">Omron</span>
+          </div>
+          <div class="flex min-h-[86px] items-center justify-center border-b border-r border-clay-200 bg-white px-5 py-5 text-center">
+            <span class="text-[16px] font-semibold tracking-[-.01em] text-graph-700">Delta</span>
+          </div>
+          <div class="flex min-h-[86px] items-center justify-center border-b border-r border-clay-200 bg-white px-5 py-5 text-center">
+            <span class="text-[16px] font-semibold tracking-[-.01em] text-graph-700">Festo</span>
+          </div>
+          <div class="flex min-h-[86px] items-center justify-center border-b border-r border-clay-200 bg-white px-5 py-5 text-center">
+            <span class="text-[16px] font-semibold tracking-[-.01em] text-graph-700">SMC</span>
+          </div>
+          <div class="flex min-h-[86px] items-center justify-center border-b border-r border-clay-200 bg-white px-5 py-5 text-center">
+            <span class="text-[16px] font-semibold tracking-[-.01em] text-graph-700">Mitsubishi Electric</span>
+          </div>
+          <div class="flex min-h-[86px] items-center justify-center border-b border-r border-clay-200 bg-white px-5 py-5 text-center">
+            <span class="text-[16px] font-semibold tracking-[-.01em] text-graph-700">Phoenix Contact</span>
+          </div>
+          <div class="flex min-h-[86px] items-center justify-center border-b border-r border-clay-200 bg-white px-5 py-5 text-center">
+            <span class="text-[16px] font-semibold tracking-[-.01em] text-graph-700">SICK</span>
+          </div>
+          <div class="flex min-h-[86px] items-center justify-center border-b border-r border-clay-200 bg-white px-5 py-5 text-center">
+            <span class="text-[16px] font-semibold tracking-[-.01em] text-graph-700">ifm</span>
+          </div>
         </div>
         <p class="mt-5 text-[12.5px] leading-relaxed text-graph-400">
           The manufacturers shown are examples of brands that may be sourced for relevant requirements. Twin Fortune Ltd. is not limited to these brands. Brand availability is subject to the particular product, specification and sourcing arrangement. No authorised distributorship or partnership is implied unless expressly stated.
