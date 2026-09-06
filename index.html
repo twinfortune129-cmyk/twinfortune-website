@@ -79,19 +79,19 @@ tailwind.config = {
   }
 
   .brand-header { box-shadow: 0 1px 0 rgba(31,90,58,.06); }
-  .brand-logo { height:54px; width:auto; }
+  .brand-logo { width:190px; height:auto; }
   .hero-shell { background:linear-gradient(135deg,#ffffff 0%,#f7fbf8 54%,#edf5ef 100%); }
   .capability-card { border-radius:2px; }
-  @media (min-width:640px){ .brand-logo{height:60px;} }
-  @media (min-width:1024px){ .brand-logo{height:68px;} }
+  @media (min-width:640px){ .brand-logo{width:215px;} }
+  @media (min-width:1024px){ .brand-logo{width:240px;} }
 </style>
 </head>
 <body class="bg-white font-sans text-graph-600">
 <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:m-3 focus:bg-moss-600 focus:px-4 focus:py-2 focus:text-white">Skip to content</a>
 
 <header class="brand-header sticky top-0 z-40 border-b border-moss-100 bg-white/95 backdrop-blur">
-  <div class="mx-auto flex h-[86px] max-w-page items-center justify-between gap-7 px-5 lg:h-[96px] lg:px-10">
-    <a href="index.html" class="shrink-0" aria-label="Twin Fortune Ltd. home"><img src="assets/logo.png" alt="Twin Fortune Ltd." width="379" height="197" class="brand-logo" fetchpriority="high"></a>
+  <div class="mx-auto flex h-[104px] max-w-page items-center justify-between gap-7 px-5 lg:h-[122px] lg:px-10">
+    <a href="index.html" class="shrink-0" aria-label="Twin Fortune Ltd. home"><img src="assets/logo-original-full.png" alt="Twin Fortune Ltd. — Procurement, Supply, Solutions" width="1406" height="686" class="brand-logo" fetchpriority="high"></a>
     <nav class="hidden items-center gap-9 lg:flex" aria-label="Primary"><a href="index.html" class="pb-0.5 text-[13.5px] tracking-tight text-moss-600 border-b border-moss-500">Home</a><a href="about.html" class="pb-0.5 text-[13.5px] tracking-tight text-graph-500 hover:text-moss-600">About</a><a href="procurement.html" class="pb-0.5 text-[13.5px] tracking-tight text-graph-500 hover:text-moss-600">Procurement &amp; Supply</a><a href="how-we-work.html" class="pb-0.5 text-[13.5px] tracking-tight text-graph-500 hover:text-moss-600">How We Work</a></nav>
     <div class="hidden items-center gap-3 lg:flex">
       <a href="https://wa.me/233531098399" target="_blank" rel="noopener"
@@ -118,49 +118,53 @@ tailwind.config = {
 
 <main id="main">
 
-<section class="hero-shell relative overflow-hidden border-b border-moss-100">
-  <div class="grid-field pointer-events-none absolute inset-0" aria-hidden="true"></div>
-  <div class="relative mx-auto max-w-page px-5 pb-16 pt-16 lg:px-10 lg:pb-24 lg:pt-24">
-    <p class="font-mono text-[11px] uppercase tracking-[.18em] text-brass-500">Procurement &amp; Supply Solutions</p>
-    <h1 class="mt-7 max-w-4xl font-serif text-[40px] font-light leading-[1.08] text-moss-600 sm:text-[58px] lg:text-[70px]">
-      Tell us what you need.<br class="hidden sm:block"> We will work out how to source it.
-    </h1>
-
-    <div class="mt-12 grid gap-10 lg:grid-cols-12 lg:gap-16">
-      <div class="space-y-5 text-[16.5px] leading-relaxed text-graph-500 lg:col-span-7">
-        <p>
-          Twin Fortune Ltd. provides procurement and supply services to businesses and institutions,
-          covering industrial equipment, engineering and maintenance components, electrical and automation
-          products, lubricants, safety supplies, technology and other operational requirements.
+<section class="relative overflow-hidden border-b border-moss-100 bg-white">
+  <div class="mx-auto max-w-page px-5 py-10 lg:px-10 lg:py-12">
+    <div class="grid items-stretch gap-10 lg:grid-cols-12 lg:gap-12">
+      <div class="flex flex-col justify-center lg:col-span-5 lg:py-8">
+        <p class="font-mono text-[11px] uppercase tracking-[.22em] text-graph-500">Sourcing today. Building tomorrow.</p>
+        <h1 class="mt-6 font-sans text-[42px] font-semibold leading-[1.03] tracking-[-.035em] text-moss-800 sm:text-[54px] lg:text-[64px]">
+          Procurement &amp;<br>Supply Solutions
+        </h1>
+        <p class="mt-6 max-w-xl text-[24px] font-medium leading-[1.25] tracking-[-.02em] text-moss-700 sm:text-[28px]">
+          Tell us what you need.<br>We will work out how to source it.
         </p>
-        <p>
-          We handle routine procurement, project-specific requirements and specialised items, drawing on local and
-          international sources according to the particular requirement.
+        <p class="mt-6 max-w-[39rem] text-[16px] leading-[1.7] text-graph-600">
+          Twin Fortune Ltd. provides procurement and supply services to businesses and institutions, sourcing products, equipment and operational requirements locally and internationally according to specification.
         </p>
-        <div class="flex flex-col gap-3 pt-4 sm:flex-row">
-          <a href="contact.html" class="bg-moss-600 px-7 py-3.5 text-center text-[13px] font-semibold uppercase tracking-[.08em] text-white hover:bg-moss-500">Request a quote</a>
-          <a href="procurement.html" class="border border-moss-300 px-7 py-3.5 text-center text-[13px] font-semibold uppercase tracking-[.08em] text-moss-600 hover:bg-moss-600 hover:text-white">Explore our capabilities</a>
+        <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+          <a href="contact.html" class="bg-moss-700 px-7 py-3.5 text-center text-[14px] font-medium text-white transition hover:bg-moss-600">Request a Quote <span aria-hidden="true">→</span></a>
+          <a href="procurement.html" class="border border-moss-600 px-7 py-3.5 text-center text-[14px] font-medium text-moss-700 transition hover:bg-moss-50">Our Capabilities</a>
         </div>
       </div>
 
-      <div class="lg:col-span-5">
-        <div class="border-t-2 border-moss-600 pt-6">
-          <p class="font-mono text-[11px] uppercase tracking-[.16em] text-graph-400">Send us any of the following</p>
-          <ul class="mt-5">
-            <li class="flex justify-between gap-4 border-b border-clay-200 py-2.5 text-[14px]"><span class="text-graph-600">Item description</span></li>
-            <li class="flex justify-between gap-4 border-b border-clay-200 py-2.5 text-[14px]"><span class="text-graph-600">Manufacturer or brand</span></li>
-            <li class="flex justify-between gap-4 border-b border-clay-200 py-2.5 text-[14px]"><span class="text-graph-600">Part or model number</span></li>
-            <li class="flex justify-between gap-4 border-b border-clay-200 py-2.5 text-[14px]"><span class="text-graph-600">Technical specification</span></li>
-            <li class="flex justify-between gap-4 border-b border-clay-200 py-2.5 text-[14px]"><span class="text-graph-600">Quantity</span></li>
-            <li class="flex justify-between gap-4 border-b border-clay-200 py-2.5 text-[14px]"><span class="text-graph-600">Photograph</span></li>
-            <li class="flex justify-between gap-4 border-b border-clay-200 py-2.5 text-[14px]"><span class="text-graph-600">Required delivery date</span></li>
-            <li class="flex justify-between gap-4 border-b border-clay-200 py-2.5 text-[14px]"><span class="text-graph-600">RFQ or procurement list</span></li>
-          </ul>
-          <p class="mt-5 text-[13.5px] leading-relaxed text-graph-400">
-            Don't have all of it? Send what you have. For specialised requirements we can work from the
-            available product information and determine what further details may be required.
-          </p>
+      <div class="relative min-h-[420px] overflow-hidden bg-moss-50 lg:col-span-7 lg:min-h-[610px]">
+        <img src="assets/hero-procurement.webp" alt="International procurement and industrial supply represented by a container port, cargo vessel and industrial equipment" width="1014" height="605" fetchpriority="high" decoding="async" class="absolute inset-0 h-full w-full object-cover">
+        <div class="pointer-events-none absolute inset-y-0 left-0 w-28 bg-gradient-to-r from-white via-white/55 to-transparent" aria-hidden="true"></div>
+        <div class="absolute right-6 top-7 border-l-2 border-moss-600 bg-white/80 px-5 py-3 backdrop-blur-sm sm:right-8 sm:top-9">
+          <p class="text-[14px] uppercase leading-[1.45] tracking-[.18em] text-graph-700"><span class="font-semibold">Global Sourcing</span><br>Local Impact</p>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-moss-800 text-white">
+    <div class="mx-auto grid max-w-page divide-y divide-white/15 px-5 sm:grid-cols-2 sm:divide-x sm:divide-y-0 lg:grid-cols-4 lg:px-10">
+      <div class="flex min-h-[104px] items-center gap-4 py-6 sm:px-6 sm:first:pl-0">
+        <svg class="h-8 w-8 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg>
+        <span class="text-[14px] leading-snug">Local &amp;<br>International Sourcing</span>
+      </div>
+      <div class="flex min-h-[104px] items-center gap-4 py-6 sm:px-6">
+        <svg class="h-8 w-8 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1-2.8 2.8-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.6V21h-4v-.1a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1L4.2 17l.1-.1a1.7 1.7 0 0 0 .3-1.9A1.7 1.7 0 0 0 3 14H3v-4h.1a1.7 1.7 0 0 0 1.6-1 1.7 1.7 0 0 0-.3-1.9L4.2 7 7 4.2l.1.1A1.7 1.7 0 0 0 9 4.6a1.7 1.7 0 0 0 1-1.6V3h4v.1a1.7 1.7 0 0 0 1 1.6 1.7 1.7 0 0 0 1.9-.3l.1-.1L19.8 7l-.1.1a1.7 1.7 0 0 0-.3 1.9 1.7 1.7 0 0 0 1.6 1H21v4h-.1a1.7 1.7 0 0 0-1.5 1Z"/></svg>
+        <span class="text-[14px] leading-snug">Wide Procurement<br>Capabilities</span>
+      </div>
+      <div class="flex min-h-[104px] items-center gap-4 py-6 sm:px-6">
+        <svg class="h-8 w-8 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 3 5 6v5c0 4.6 2.8 8.4 7 10 4.2-1.6 7-5.4 7-10V6l-7-3Z"/><path d="m9 12 2 2 4-4"/></svg>
+        <span class="text-[14px] leading-snug">Quality &amp;<br>Reliability</span>
+      </div>
+      <div class="flex min-h-[104px] items-center gap-4 py-6 sm:px-6 sm:last:pr-0">
+        <svg class="h-8 w-8 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 20v-7a8 8 0 0 1 16 0v7"/><path d="M8 20v-4h8v4M9 8h.01M15 8h.01"/></svg>
+        <span class="text-[14px] leading-snug">Solutions for Businesses<br>&amp; Institutions</span>
       </div>
     </div>
   </div>
