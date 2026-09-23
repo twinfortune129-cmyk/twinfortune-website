@@ -136,9 +136,9 @@ tailwind.config = {
   <div class="mx-auto grid max-w-page gap-14 px-5 py-16 lg:grid-cols-12 lg:gap-16 lg:px-10 lg:py-20">
 
     <div class="lg:col-span-7">
-      <form id="rfq" novalidate class="space-y-12">
-
-        <fieldset>
+<form id="rfq" action="https://api.web3forms.com/submit" method="POST" novalidate class="space-y-12">
+   <input type="hidden" name="access_key" value="0342a0aa-4a27-4161-b781-e2d9bbc11611>     
+  <fieldset>
           <legend class="w-full border-b border-moss-600 pb-2 font-mono text-[11px] uppercase tracking-[.14em] text-moss-600">Your details</legend>
           <div class="mt-7 grid gap-6 sm:grid-cols-2">
             <div>
@@ -382,19 +382,26 @@ tailwind.config = {
     });
     if(first){first.focus();return;}
 
-    var d=Object.fromEntries(new FormData(form).entries());
-    // No backend required: hands the RFQ to the sender's mail client, pre-filled.
-    // Swap for Netlify Forms / Formspree when a host is chosen.
-    var url='mailto:info@twinfortuneltd.com'
-      +'?subject='+encodeURIComponent('RFQ — '+d.company)
-      +'&body='+encodeURIComponent(body(d));
-    window.location.href=url;
+    var formData=new FormData(form);
+var d=Object.fromEntries(formData.entries());
 
+fetch('https://api.web3forms.com/submit',{
+  method:'POST',
+  body:formData
+}).then(function(response){
+  if(!response.ok) throw new Error('Submission failed');
+  return response.json();
+}).then(function(result){
+  if(!result.success) throw new Error('Submission failed');
     document.getElementById('waLink').href='https://wa.me/233241137508?text='+encodeURIComponent(body(d));
     form.classList.add('hidden');
     done.classList.remove('hidden');
     done.scrollIntoView({behavior:'smooth',block:'center'});
   });
+    .catch(function(error){
+  console.error(error);
+  alert('We could not submit your RFQ. Please try again or contact us directly.');
+});
 })();
 </script>
 </body></html>
